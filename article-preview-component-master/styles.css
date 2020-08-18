@@ -34,17 +34,17 @@ h1 {
     line-height: 45px;
 }
 
-.content p {
-    color: hsl(214, 17%, 51%);
-    margin-top: 20px;
-    line-height: 25px;
-}
-
 .content {
     background-color: #ffffff;
     padding: 50px;
     margin-left: -8%;
     border-radius: 0px 10px 10px 0px;
+}
+
+.content p {
+    color: hsl(214, 17%, 51%);
+    margin-top: 20px;
+    line-height: 25px;
 }
 
 .user-content {
