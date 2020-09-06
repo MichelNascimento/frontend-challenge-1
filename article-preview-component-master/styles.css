@@ -54,22 +54,30 @@ h1 {
     justify-content: space-between;
 }
 
-i {
-    padding: 10px 15px;
+button {
+    padding: 10px 10px;
+    margin-left: 15%;
+    border: none;
+    outline: none;
     border-radius: 20px;
     background-color: hsl(210, 46%, 95%);
     cursor: pointer;
     transition: 0.1s ease-in-out;
 }
 
-i:hover {
+button:hover {
     background-color: hsl(214, 17%, 51%);
     transition: 0.1s ease-in-out;
 }
 
-i:hover svg path {
+button:hover svg path {
     fill: hsl(210, 46%, 95%);
     transition: 0.s ease-in-out;
+}
+
+.share {
+    display: flex;
+    align-items: center;
 }
 
 .share-container {
@@ -77,9 +85,7 @@ i:hover svg path {
     padding: 10px 50px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(160, 160, 160, 0.6);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: none;
 }
 
 .share-container span {
@@ -89,6 +95,22 @@ i:hover svg path {
 
 .share-container i {
     background-color: transparent;
+}
+
+.show-share-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: show 0.3s;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .user-info {
